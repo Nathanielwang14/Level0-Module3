@@ -9,37 +9,24 @@ public class WalkOfFame {
 		
 		// 1. Set the X position of the robot so that it starts on the left.
 		rob.setX(45);
+		rob.setSpeed(1000000000);
 		
 		// You also need to show the robot to see the result of this line.
 		
 		// 2. Make the robot draw a star shape. Hint: angle=144.
 		rob.penDown();
-		for(int i=0; i<1; i++){
+		for(int j=0; j<9; j++) {
+		for(int i=0; i<5; i++){
 			rob.penDown();
 			rob.move(50);
 			rob.turn(144);
-			rob.move(50);
-			rob.turn(144);
-			rob.move(30);
-			rob.move(30);
-			rob.turn(144);
-			rob.move(60);
-			rob.turn(144);
-			rob.move(60);
-			rob.setX(45+50);
-			rob.penDown();
-			rob.move(50);
-			rob.turn(144);
-			rob.move(50);
-			rob.turn(144);
-			rob.move(30);
-			rob.move(30);
-			rob.turn(144);
-			rob.move(30);
-			rob.turn(144);
-			rob.move(60);
-			rob.turn(144);
-			rob.move(60);
+
+			
+		}
+		rob.penUp();
+		rob.turn(90);
+		rob.move(50);
+		rob.turn(-90);
 		}
 		// 3. Set the length of each line in the star to 30.
 
